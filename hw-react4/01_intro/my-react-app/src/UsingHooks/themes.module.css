@@ -1,0 +1,26 @@
+/* Стилі для світлої теми */
+.light {
+    background-color: #ffffff;
+    color: #333333;
+    transition: all 0.3s ease; /* Додамо плавність перемикання */
+    min-height: 100vh;
+}
+
+/* Стилі для темної теми */
+.dark {
+    background-color: #222222;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Можна навіть міняти стилі вкладених елементів */
+.dark button {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.light button {
+    background-color: #eee;
+    color: black;
+}

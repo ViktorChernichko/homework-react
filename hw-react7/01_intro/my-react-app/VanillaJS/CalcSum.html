@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Калькулятор (Uncontrolled)</h3>
+<ul>
+    <li>
+        <label>
+            a = <input id="inA"
+                type="number"
+            placeholder="0"
+            />
+        </label>
+    </li>
+    <li>
+        <label>
+            b = <input id="inB"
+                type="number"
+            placeholder="0"
+            />
+        </label>
+    </li>
+    <li><strong>Sum: <span id="outSum"> </span></strong></li>
+</ul>
+
+<button id="btnCalcSum">Calculate Sum</button>
+
+<script>
+
+    const inA = document.getElementById("inA");
+    const inB = document.getElementById("inB");
+    const outSum = document.getElementById("outSum");
+
+    document.getElementById("btnCalcSum").onclick = () => {
+        const a = parseInt(inA.value);
+        const b = parseInt(inB.value);
+        const sum = a + b;
+        outSum.innerText = sum;
+    }
+
+</script>
+
+
+</body>
+</html>
